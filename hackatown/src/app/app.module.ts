@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { MapComponent } from './map/map.component';
     })
   ],
   providers: [],
-  declarations: [ AppComponent, MapComponent ],
+  declarations: [ AppComponent, MapComponent, UserComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
