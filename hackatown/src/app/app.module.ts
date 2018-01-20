@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { AgmCoreModule } from '@agm/core';
     })
   ],
   providers: [],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, MapComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
