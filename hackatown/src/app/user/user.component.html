@@ -1,6 +1,6 @@
-<section class="section hero">
-  <div class="img-wrp">
-    <img class="hero-img" src="https://source.unsplash.com/XbwHrt87mQ0" alt="">
+<section class="section hero" >
+  <div class="img-wrp" data-module="bg-parallax">
+    <img class="hero-img" src="https://source.unsplash.com/XbwHrt87mQ0" alt="" data-bg-parallax="image">
   </div>
   <div class="profile-wrp">
     <img class="profile-image" src="https://source.unsplash.com/UJm8kDbE57Y" class="img-thumbnail">
@@ -11,71 +11,63 @@
 <span><hr width="97%"></span>
 
 
-<div class="container-fluid">
-  <section class="section profil">
-    	<div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card mb-3" style="width: 100%;">     
-              <div class="wrap">
-                <div class="inner">
-                  <h2>Votre profil</h2>
-                  <h3 class="title title-medium">Nom : {{ user.name }}</h3>
-                  <div class="infos">
-                    <div class="infos-total">Utilisation moyenne par jour : {{ user.usePerDay }} kWh</div>
-                    <div class="infos-total">Utilisation totale du mois : {{ user.totalUsePerMonth }} kWh</div>
+<div class="container-fluid  ">
+  <div class="row">
+
+    <div class="section profil col-xs-12 col-sm-4">
+        <div class="">
+            <div class="">
+              <div class="card mb-3" style="width: 100%;">     
+                <div class="wrap">
+                  <div class="inner">
+                    <h3 class="title title-medium">Nom : USER.NAME</h3>
+                    <div class="infos">
+                      <div class="infos-total">Utilisation moyenne par jour : user.usePerDay kWh</div>
+                      <div class="infos-total">Utilisation totale du mois : user.totalUsePerMonth kWh</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  </section>
 
-  <section class="section challenges-list">
-    <!-- <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card mb-3" style="width: 100%;">     
+    <div class="section challenges-list col-xs-12 col-sm-4">
+        <div class="">
+            <div class="card mb-3" style="width: 100%;"> 
               <div class="wrap">
                 <div class="inner">
-                  <h2>Votre profil</h2>
-                  <h3 class="title title-medium">Nom : {{ user.name }}</h3>
-                  <div class="infos">
-                    <div class="infos-total">Utilisation moyenne par jour : {{ user.usePerDay }} kWh</div>
-                    <div class="infos-total">Utilisation totale du mois : {{ user.totalUsePerMonth }} kWh</div>
+                  <div class="active-challenges">
+                    <h4 class="title title-item">Défis en cours</h4>
+                    <div class="challenges-item">
+                      <h5 class="title title-small">Être le meilleur</h5>
+                      <p class="challenge-resume content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div> -->
+        </div>
+      </div>
 
     <div class="col-xs-12 col-sm-4">
-        <div class="card mb-3" style="width: 100%;"> 
-          <div class="wrap">
-            <div class="inner">
-              <div class="active-challenges">
-                <h4 class="title title-item">Défis en cours</h4>
-                <div class="challenges-item">
-                  <h5 class="title title-small">Être le meilleur</h5>
-                  <p class="challenge-resume content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="">
+            <div class="card mb-3" style="width: 100%;"> 
+              <div class="wrap">
+                <div class="inner">
+                  <div class="completed-challenges">
+                    <h4 class="title title-item">Dernier défis complétés</h4>
+                    <div class="challenges-item">
+                      <h5 class="title title-small">Série de réduction</h5>
+                      <p class="challenge-resume content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-      <div class="col-xs-12 col-sm-4">
-          <div class="card mb-3" style="width: 100%;"> 
-            <div class="completed-challenges">
-              <h4 class="title title-item">Dernier défis complétés</h4>
-              <div class="challenges-item">
-                <h5 class="title title-small">Série de réduction</h5>
-                <p class="challenge-resume content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>  
-    </div>
-    <a routerLink="/achievements">Voir tous les defis</a>
-  </section>
-</div>
+      </div>
+  </div>
+      
+      <a routerLink="/achievements">Voir tous les defis</a>
+</div> 
