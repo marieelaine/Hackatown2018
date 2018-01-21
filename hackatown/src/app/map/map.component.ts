@@ -72,7 +72,6 @@ export class MapComponent implements OnInit {
       marker.addListener('click', function(e) {
         map.setZoom(11);
         map.setCenter(marker.getPosition());
-        console.log(marker, e.target);
       })
 
     }

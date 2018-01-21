@@ -1,5 +1,17 @@
 import { templateJitUrl } from "@angular/compiler";
-import { User } from './user';
+
+class User {
+    id: number;
+    name: string;
+    imageSrc: any;
+    usePerDay: number;
+    totalUsePerMonth: number;
+    achievementsList: any = [1, 2, 3];
+    localisation: any = {
+        lat: 42.33333,
+        lng: -43.3333
+    };
+}
 
 declare var require: any;
 export class Users {
@@ -13,7 +25,7 @@ export class Users {
         const user_data = require('./data_user.json').users;
         for (let us of user_data) {
             let temp = new User();
+            
         }
-        console.log(user_data[0]);
     }
 }
