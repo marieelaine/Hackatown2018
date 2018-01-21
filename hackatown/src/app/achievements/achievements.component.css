@@ -1,0 +1,20 @@
+.Achievements-section{
+	margin: 10px;
+	background-color: #8a93a3;
+	padding: 10px;
+}
+
+.Achievement-element{
+	margin: 10px;
+	padding: 10px;
+	background-color: #bac4d6;
+}
+
+.Achievement-title h6{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.achiev-title{
+	margin-left: 15px;
+}
