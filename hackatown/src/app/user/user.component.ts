@@ -12,7 +12,9 @@ export class UserComponent implements OnInit {
     name: 'Simon Marcoux'
   };
 
-  constructor() { }
+  constructor() {
+    console.log('user page');
+  }
 
   ngOnInit() {
   }
