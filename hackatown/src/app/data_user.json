@@ -2,7 +2,7 @@
     "users" : [
         {
             "id":1,
-            "name":"Simon Marcoux",
+            "name":"Simone Marcoux",
             "imageSrc":"https://www.webfuel.com/blog/hero-banner.jpg",
             "usePerDayElec":24.5,
             "totalUsePerMonthElec": 680,
