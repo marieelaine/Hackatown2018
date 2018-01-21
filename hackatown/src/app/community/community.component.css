@@ -1,8 +1,6 @@
-
-
-
-
 /* Community styles */
+.label { max-width: 75%; }
+.value { font-weight: bold; }
 .user-image { 
     text-align: center; 
 }
