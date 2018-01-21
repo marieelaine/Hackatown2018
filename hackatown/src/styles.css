@@ -55,7 +55,6 @@ h1, h2 {
 
 /* footer */
 footer {
-    background: linear-gradient(white, #efa5b2a1);
     height: 100px;
     display: flex;
     align-items: flex-end;
