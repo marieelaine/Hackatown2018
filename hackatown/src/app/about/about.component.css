@@ -9,3 +9,8 @@
     top: 20%;
     bottom: auto;
 }
+
+.card-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
