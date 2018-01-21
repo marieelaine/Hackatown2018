@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
   user: User = {
     id: 1,
-    name: 'Simon Marcoux'
+    name: 'Simon Marcoux',
+    usePerDay: 24.5,
+    totalUsePerMonth: 680,
   };
 
   constructor() {

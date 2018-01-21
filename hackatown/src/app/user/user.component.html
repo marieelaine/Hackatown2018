@@ -1,8 +1,40 @@
-<section>     
+<section class="section hero">
+  <div class="img-wrp">
+    <img class="hero-img" src="https://www.webfuel.com/blog/hero-banner.jpg" alt="">
+  </div>
+</section>
+
+<section class="section profil">     
   <div class="wrap">
     <div class="inner">
       <h2>Votre profil</h2>
-      <h3 class="title title-item">Nom : {{ user.name }}</h3>
+      <h3 class="title title-medium">Nom : {{ user.name }}</h3>
+      <div class="infos">
+        <div class="infos-total">Utilisation moyenne par jour : {{ user.usePerDay }} kWh</div>
+        <div class="infos-total">Utilisation totale du mois : {{ user.totalUsePerMonth }} kWh</div>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="section challenges-list">
+  <div class="wrap">
+    <div class="inner">
+      <div class="active-challenges">
+        <h4 class="title title-item">Défis en cours</h4>
+        <div class="challenges-item">
+          <h5 class="title title-small">Être le meilleur</h5>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur necessitatibus ab tempora ipsam, enim molestias fugiat nam! Hic, optio, pariatur. Id eaque voluptas distinctio, dolore minus ipsam alias magnam, voluptatum.</p>
+        </div>
+      </div>
+
+      <div class="completed-challenges">
+        <h4 class="title title-item">Défis complétés</h4>
+        <div class="challenges-item">
+          <h5 class="title title-small">Série de réduction</h5>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur necessitatibus ab tempora ipsam, enim molestias fugiat nam! Hic, optio, pariatur. Id eaque voluptas distinctio, dolore minus ipsam alias magnam, voluptatum.</p>
+        </div>
+      </div>
+    </div>  
   </div>
 </section>
