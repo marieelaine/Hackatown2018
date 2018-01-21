@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Marker } from '../Marker';
+import { Users } from '../users';
 
 @Component({
   selector: 'app-map',
