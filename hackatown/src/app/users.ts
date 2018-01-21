@@ -20,7 +20,7 @@ export class Users {
             temp.id = us.id;
             temp.name = us.name;
             temp.usePerDayElec = us.usePerDayElec;
-            temp.totalUsePerMonthElec = us.totalUsePerMonth;
+            temp.totalUsePerMonthElec = us.totalUsePerMonthElec;
             temp.useThisMonthElec = us.useThisMonthElec;
             temp.useThisMonthElec = us.useThisMonthElec;
             temp.usePerDayWater = us.usePerDayWater;
@@ -44,5 +44,9 @@ export class Users {
                 return this.users[i];
             }
         }
+    }
+
+    getUserByIndex(index:number): User {
+        return this.users[index];
     }
 }
