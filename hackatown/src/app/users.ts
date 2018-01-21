@@ -11,9 +11,9 @@ export class Users {
 
     retreiveDataFromDatabase(): void {
         const user_data = require('./data_user.json').users;
-        // for (let us of user_data) {
-
-        // }
+        for (let us of user_data) {
+            let temp = new User();
+        }
         console.log(user_data[0]);
     }
 }

@@ -17,9 +17,11 @@ export class MapComponent implements OnInit {
   centerLongitude = -73.56725599999999;
   centerLatitude = 45.5016889;
 
+
   constructor() { 
     const google = (window as any).google;
   }
+
 
   ngOnInit() {
     this.users = new Users();
