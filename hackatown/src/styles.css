@@ -3,6 +3,10 @@
     font-family: "open sans";
 }
 
+.bg-default{
+    background-color: #191919;
+}
+
 /* Titles */
 h1, h2, h3, h4, h5 {
     font-weight: bold;
@@ -48,3 +52,19 @@ h1, h2 {
 .img-wrp img {
     display: block;
 }
+
+/* footer */
+footer {
+    background: linear-gradient(white, #efa5b2a1);
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+ footer .footer-link a{
+      text-decoration: underline;
+      color: #191919;
+      size: 10px;
+  }
