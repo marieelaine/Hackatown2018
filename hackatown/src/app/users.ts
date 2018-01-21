@@ -20,7 +20,10 @@ export class Users {
     }
 
     retreiveDataFromDatabase(): void {
-        var user_data = require('./data_user.json');
-        console.log(user_data.users[0]);
+        var user_data = require('./data_user.json').users;
+        // for (let us of user_data) {
+
+        // }
+        console.log(user_data[0]);
     }
 }
