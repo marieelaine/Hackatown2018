@@ -27,10 +27,6 @@ export class MapComponent implements OnInit {
       this.initMap();
      }, 2000);
   }
-  
-  onClick(id: number): void {
-
-  }
 
   initMap(): void {
     var locations = [
@@ -61,24 +57,23 @@ export class MapComponent implements OnInit {
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 3,
-      center: {lat: -28.024, lng: 140.887}
+      center: {lat: this.centerLatitude, lng: this.centerLongitude}
     });
 
     
-    for(var i = 0; i < 3 ; i++) {
+    for(var i = 0; i < 1 ; i++) {
       var marker = new google.maps.Marker({
-        position: locations[i],
+        position: this.users.getUsers()[0],
         map: map
       });
 
       marker.addListener('click', function(e) {
-        map.setZoom(8);
+        map.setZoom(11);
         map.setCenter(marker.getPosition());
-        console.log(marker, e.target;
+        console.log(marker, e.target);
       })
 
     }
-
 
   } //fin de initmap
 
