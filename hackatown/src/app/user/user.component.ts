@@ -9,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
   user: User = {
     id: 1,
-    name: 'Simon Marcoux'
+    name: 'Simon Marcoux',
+    imageSrc: 'https://www.webfuel.com/blog/hero-banner.jpg',
+    // image: '/assets/users/profile.png',
+    usePerDay: 24.5,
+    totalUsePerMonth: 680,
+    achievementsList: [1, 2, 3],
+    localisation: {
+        lat: 42.33333,
+        lng: -43.3333
+    }
   };
 
-  constructor() { }
+  constructor() {
+    console.log('user page');
+  }
 
   ngOnInit() {
   }
