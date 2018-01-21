@@ -1,17 +1,5 @@
 import { templateJitUrl } from "@angular/compiler";
-
-class User {
-    id: number;
-    name: string;
-    imageSrc: any;
-    usePerDay: number;
-    totalUsePerMonth: number;
-    achievementsList: any = [1, 2, 3];
-    localisation: any = {
-        lat: 42.33333,
-        lng: -43.3333
-    };
-}
+import { User } from './user';
 
 
 export class Users {
@@ -22,6 +10,7 @@ export class Users {
     }
 
     retreiveDataFromDatabase(): void {
+        this.users = [];
         let user_data = require('./data_user.json').users;
         for (let us of user_data) {
             let tempUser = new User();
@@ -33,7 +22,13 @@ export class Users {
             tempUser.localisation = us.localisation;
             console.log(tempUser);
             this.users.push(tempUser);
+            console.log(tempUser.localisation.lat);
+            console.log(tempUser.localisation.lng);
         }
         console.log(user_data[0]);
+    }
+
+    getUsers(): User[] {
+        return this.users;
     }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Marker } from '../Marker';
+import { User } from '../user';
 import { Users } from '../users';
 
 @Component({
@@ -11,35 +11,16 @@ import { Users } from '../users';
 
 
 export class MapComponent implements OnInit {
-  markers: Marker[];
+  users:Users;
 
   montrealLatitude: number = 45.5016889;
   montrealLongitude: number = -73.56725599999999;
-  lat: number = 45.5016889;
-  lng: number = -73.56725599999999;
 
   constructor() { }
 
   ngOnInit() {
-    this.initMarkers();
-    console.log("HELLO");
+    this.users = new Users();
   }
   
-  initMarkers(): void {
-    this.markers = [];
-
-    this.markers.push(new Marker());
-    this.markers.push(new Marker());
-    this.markers.push(new Marker());
-
-    this.markers[0].latitude = 45.45;
-    this.markers[0].longitude = -73.56725599999999;
-
-    this.markers[1].latitude = 45.55;
-    this.markers[1].longitude = -73.56725599999999;
-    
-    this.markers[2].latitude = 45.5;
-    this.markers[2].longitude = -73.56725599999999;
-  }
 
 }
