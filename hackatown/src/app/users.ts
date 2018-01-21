@@ -19,8 +19,14 @@ export class Users {
             let temp = new User();
             temp.id = us.id;
             temp.name = us.name;
-            temp.usePerDay = us.usePerDay;
-            temp.totalUsePerMonth = us.totalUsePerMonth;
+            temp.usePerDayElec = us.usePerDayElec;
+            temp.totalUsePerMonthElec = us.totalUsePerMonth;
+            temp.useThisMonthElec = us.useThisMonthElec;
+            temp.useThisMonthElec = us.useThisMonthElec;
+            temp.usePerDayWater = us.usePerDayWater;
+            temp.totalUsePerMonthWater = us.totalUsePerMonthWater;
+            temp.useThisMonthWater = us.useThisMonthWater;
+            temp.useLastMonthWater = us.useLastMonthWater;
             temp.achievementsList = us.achievementsList;
             temp.localisation = us.localisation;
             this.users.push(temp);
