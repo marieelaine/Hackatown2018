@@ -61,9 +61,9 @@ export class MapComponent implements OnInit {
     });
 
     
-    for(var i = 0; i < 1 ; i++) {
+    for(var i = 0; i < 3 ; i++) {
       var marker = new google.maps.Marker({
-        position: this.users.getUsers()[0],
+        position: locations[i],
         map: map
       });
 
