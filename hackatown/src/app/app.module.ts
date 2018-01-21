@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { UserComponent } from './user/user.component';
+import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AchievementsComponent } from './achievements/achievements.component';
 
@@ -21,7 +22,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapComponent, UserComponent, AchievementsComponent ],
+  declarations: [ AppComponent, MapComponent, UserComponent, AboutComponent, AchievementsComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
