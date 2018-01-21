@@ -21,7 +21,6 @@ export default class ParallaxBackground {
     constructor() {
         this._elements = document.querySelectorAll('[data-module="bg-parallax"]') as NodeListOf<HTMLElement>;
 
-        console.log('test');
         // init controller
         this._controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 1, duration: '200%'}});
 
@@ -32,7 +31,7 @@ export default class ParallaxBackground {
             // build scenes
             new ScrollMagic.Scene({triggerElement: this._elements[i]})
                 .setTween(image, {y: value, ease: Linear.easeNone})
-                .addIndicators()
+                // .addIndicators() // dev only
                 .addTo(this._controller);
 
             //     // save element

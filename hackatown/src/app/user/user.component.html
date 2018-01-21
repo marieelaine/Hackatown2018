@@ -17,10 +17,10 @@
       <div class="card mb-3" style="width: 100%;">     
         <div class="wrap">
           <div class="inner">
-            <h3 class="title title-medium">Nom : USER.NAME</h3>
+            <h3 class="title title-medium">{{ this.users.getUserByIndex(1).name }} </h3>
             <div class="infos">
-              <div class="infos-total">Utilisation moyenne par jour : user.usePerDay kWh</div>
-              <div class="infos-total">Utilisation totale du mois : user.totalUsePerMonth kWh</div>
+              <div class="infos-total">Utilisation moyenne par jour : {{ this.users.getUserByIndex(0).usePerDayElec }} kWh</div>
+              <div class="infos-total">Utilisation totale du mois : {{ this.users.getUserByIndex(0).totalUsePerMonthElec }} kWh</div>
             </div>
           </div>
         </div>
