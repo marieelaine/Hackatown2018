@@ -32,27 +32,25 @@ export class MapComponent implements OnInit {
   }
 
   initMap(): void {
+    var infowindow = new google.maps.InfoWindow();
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
       center: {lat: this.centerLatitude, lng: this.centerLongitude}
     });
 
-    for(var i = 0; i < 1 ; i++) {
+    for(var i = 0; i < this.users.getUsers().length ; i++) {
       var marker = new google.maps.Marker({
         position: this.users.getUsers()[i].localisation,
         map: map
       });
 
-      marker.addListener('click', function() {
-        map.setZoom(13);
-        map.setCenter(marker.getPosition());
+      marker.addListener('click', (e) => {
+        map.setCenter(e.latLng);
+        let tempUser = this.users.getUser(e.latLng);
+        console.log(tempUser);
       })
-
     }
 
   } //fin de initmap
-
-
-
 
 }
