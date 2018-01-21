@@ -6,6 +6,7 @@ import { Users } from '../users';
 declare var MarkerClusterer: any;
 declare var google: any;
 declare var TweenMax: any;
+declare var Expo: any;
 
 @Component({
   selector: 'app-map',
