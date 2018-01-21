@@ -1,19 +1,5 @@
 
-/* Global */
-.align_center {
-    text-align: center;
-}
-    
-.section .wrap {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px; 
-}
 
-.section .inner {
-    padding: 60px 0;
-}
 
 
 /* Community styles */
