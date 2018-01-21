@@ -5,6 +5,7 @@ import { Users } from '../users';
 
 declare var MarkerClusterer: any;
 declare var google: any;
+declare var TweenMax: any;
 
 @Component({
   selector: 'app-map',
@@ -18,8 +19,7 @@ export class MapComponent implements OnInit {
   centerLatitude = 45.5016889;
 
 
-  constructor() { 
-    
+  constructor() {
   }
 
 
@@ -48,9 +48,11 @@ export class MapComponent implements OnInit {
         map.setCenter(e.latLng);
         let tempUser = this.users.getUser(e.latLng);
         console.log(tempUser);
-      })
+
+        TweenMax.to(window, 0.5, { scrollTo: '.community-user-details', ease: Expo.easeOut});
+      });
     }
 
-  } //fin de initmap
+  } // fin de initmap
 
 }
