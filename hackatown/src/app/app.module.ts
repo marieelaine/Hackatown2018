@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { MapComponent } from './map/map.component';
 import { UserComponent } from './user/user.component';
 import { AboutComponent } from './about/about.component';
@@ -20,6 +21,7 @@ import { CommunityComponent } from './community/community.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDY4X_beiW7jijC-n0kCBpYMBzmks1tMuA'
     }),
+    AgmSnazzyInfoWindowModule,
     AppRoutingModule
   ],
   providers: [],
