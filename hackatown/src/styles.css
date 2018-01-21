@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: "open sans";
+}
+
+/* Titles */
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.title-section {
+    margin-bottom: 25px; 
+}
+
+
+
+/* Global */
+.align_center {
+    text-align: center;
+}
+
+.g_flex {
+    display: flex;
+
+}
+.space_between { justify-content: space-between; }
+    
+.section .wrap {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.section .inner {
+    padding: 60px 0;
+}
+
+/* Img */
+.img-wrp {
+    height: 100%;
+    width: 100%;
+}
+.img-wrp img {
+    display: block;
+}
