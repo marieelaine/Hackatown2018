@@ -2,7 +2,7 @@
 <!-- the component as the initial center of the map: -->
 <agm-map [latitude]="centerLatitude" [longitude]="centerLongitude" [zoom]=11>
   <agm-marker class="mapMarker" *ngFor = "let user of users.getUsers();" [markerClickable]="true" [openInfoWindow]="true" [latitude]="user.localisation.lat" [longitude]="user.localisation.lng">
-    <agm-snazzy-info-window>
+    <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
       <ng-template>
         My first Snazzy Info Window!
       </ng-template>
