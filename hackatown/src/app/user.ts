@@ -1,6 +1,7 @@
 export class User {
     id: number;
     name: string;
+    imageSrc: any;
     usePerDay: number;
     totalUsePerMonth: number;
     achievementsList: any = [1, 2, 3];

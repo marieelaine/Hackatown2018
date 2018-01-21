@@ -10,6 +10,8 @@ export class UserComponent implements OnInit {
   user: User = {
     id: 1,
     name: 'Simon Marcoux',
+    imageSrc: 'https://www.webfuel.com/blog/hero-banner.jpg',
+    // image: '/assets/users/profile.png',
     usePerDay: 24.5,
     totalUsePerMonth: 680,
     achievementsList: [1, 2, 3],
