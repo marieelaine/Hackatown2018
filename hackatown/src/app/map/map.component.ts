@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { User } from '../user';
 import { Users } from '../users';
 
 declare var MarkerClusterer: any;
@@ -13,6 +14,7 @@ declare var google: any;
 
 export class MapComponent implements OnInit {
   users: Users;
+  u:User[];
   centerLongitude = -73.56725599999999;
   centerLatitude = 45.5016889;
 
@@ -63,9 +65,8 @@ export class MapComponent implements OnInit {
 
     
     for(var i = 0; i < 1 ; i++) {
-      console.log(this.users.getUsers());
       var marker = new google.maps.Marker({
-        position: locations[i],
+        position: this.users.getUsers()[i].localisation,
         map: map
       });
 

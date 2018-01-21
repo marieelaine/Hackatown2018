@@ -1,17 +1,6 @@
 import { templateJitUrl } from "@angular/compiler";
+import { User } from './user';
 
-class User {
-    id: number;
-    name: string;
-    imageSrc: any;
-    usePerDay: number;
-    totalUsePerMonth: number;
-    achievementsList: any = [1, 2, 3];
-    localisation: any = {
-        lat: 42.33333,
-        lng: -43.3333
-    };
-}
 
 declare var require: any;
 export class Users {
@@ -22,6 +11,7 @@ export class Users {
     }
 
     retreiveDataFromDatabase(): void {
+        this.users = [];
         const user_data = require('./data_user.json').users;
         for (let us of user_data) {
             let temp = new User();
@@ -31,6 +21,7 @@ export class Users {
             temp.totalUsePerMonth = us.totalUsePerMonth;
             temp.achievementsList = us.achievementsList;
             temp.localisation = us.localisation;
+            this.users.push(temp);
         }
     }
 
