@@ -19,12 +19,13 @@ export class MapComponent implements OnInit {
 
 
   constructor() { 
-    const google = (window as any).google;
+    
   }
 
 
   ngOnInit() {
     this.users = new Users();
+    const google = (window as any).google;
     setTimeout(() => { 
       this.initMap();
      }, 2000);
@@ -32,7 +33,7 @@ export class MapComponent implements OnInit {
 
   initMap(): void {
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 3,
+      zoom: 10,
       center: {lat: this.centerLatitude, lng: this.centerLongitude}
     });
 
@@ -42,8 +43,8 @@ export class MapComponent implements OnInit {
         map: map
       });
 
-      marker.addListener('click', function(e) {
-        map.setZoom(3);
+      marker.addListener('click', function() {
+        map.setZoom(13);
         map.setCenter(marker.getPosition());
       })
 
