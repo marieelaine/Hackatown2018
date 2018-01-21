@@ -11,12 +11,13 @@ import { Users } from '../users';
 
 
 export class MapComponent implements OnInit {
-  users:Users;
+  users: Users;
+  centerLongitude = -73.56725599999999;
+  centerLatitude = 45.5016889;
 
-  montrealLatitude: number = 45.5016889;
-  montrealLongitude: number = -73.56725599999999;
-
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit() {
     this.users = new Users();
