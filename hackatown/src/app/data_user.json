@@ -1,0 +1,16 @@
+{
+    "users" : [
+        {
+            "id":1,
+            "name":"Simon Marcoux",
+            "imageSrc":"https://www.webfuel.com/blog/hero-banner.jpg",
+            "usePerDay":24.5,
+            "totalUsePerMonth": 680,
+            "achievementsList": [1, 2, 3],
+            "localisation": {
+                "lat": 42.33333,
+                "lng": -43.3333
+            }
+        }
+    ]
+}

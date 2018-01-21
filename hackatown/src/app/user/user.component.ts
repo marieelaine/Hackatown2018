@@ -1,4 +1,4 @@
-import { User } from '../user';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+<<<<<<< HEAD
+
+=======
   user: User = {
     id: 1,
     name: 'Simon Marcoux',
@@ -19,9 +22,9 @@ export class UserComponent implements OnInit {
         lng: -43.3333
     }
   };
+>>>>>>> 9d867d0167563785d402f2bc07b5f289ca8af2b0
 
   constructor() {
-    console.log('user page');
   }
 
   ngOnInit() {
