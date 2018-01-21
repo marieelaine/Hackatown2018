@@ -8,6 +8,7 @@ import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { UserComponent } from './user/user.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import { AppRoutingModule } from './/app-routing.module';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapComponent, UserComponent ],
+  declarations: [ AppComponent, MapComponent, UserComponent, AchievementsComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

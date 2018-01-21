@@ -12,6 +12,11 @@ export class UserComponent implements OnInit {
     name: 'Simon Marcoux',
     usePerDay: 24.5,
     totalUsePerMonth: 680,
+    achievementsList: [1, 2, 3],
+    localisation: {
+        lat: 42.33333,
+        lng: -43.3333
+    }
   };
 
   constructor() {
