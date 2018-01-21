@@ -1,6 +1,6 @@
-<section class="section hero">
+<section class="section hero" data-module="bg-parallax">
   <div class="img-wrp">
-    <img class="hero-img" src="{{ user.imageSrc }}" alt="">
+    <img class="hero-img" src="http://saxony-blue.com/data/out/86/5918348-image.jpg" alt="" data-bg-parallax="image">
   </div>
 </section>
 
@@ -8,10 +8,7 @@
   <div class="wrap">
     <div class="inner">
       <h2>Votre profil</h2>
-      <h3 class="title title-medium">Nom : {{ user.name }}</h3>
       <div class="infos">
-        <div class="infos-total">Utilisation moyenne par jour : {{ user.usePerDay }} kWh</div>
-        <div class="infos-total">Utilisation totale du mois : {{ user.totalUsePerMonth }} kWh</div>
       </div>
     </div>
   </div>

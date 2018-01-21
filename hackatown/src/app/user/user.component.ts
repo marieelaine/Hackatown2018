@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import ParallaxBackground from '../utils/parallaxBackground';
 
 @Component({
   selector: 'app-user',
@@ -12,6 +13,7 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit() {
+    const heroAnim = new ParallaxBackground();
   }
 
 }
