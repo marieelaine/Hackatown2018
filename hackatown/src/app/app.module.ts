@@ -10,6 +10,7 @@ import { UserComponent } from './user/user.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { CommunityComponent } from './community/community.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapComponent, UserComponent, AboutComponent, AchievementsComponent ],
+  declarations: [ AppComponent, MapComponent, UserComponent, AboutComponent, AchievementsComponent, CommunityComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
