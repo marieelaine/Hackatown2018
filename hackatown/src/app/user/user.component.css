@@ -9,6 +9,14 @@
 	padding:0;
 }
 
+a{
+    text-align: center;
+}
+
+.wrap{
+    background-color: #fff879;
+}
+
 /*  HERO */
 .hero {
     /* overflow: hidden; */
