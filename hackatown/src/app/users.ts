@@ -11,7 +11,7 @@ class User {
     };
 }
 
-
+declare var require: any;
 export class Users {
     private users: User[];
 
@@ -20,7 +20,7 @@ export class Users {
     }
 
     retreiveDataFromDatabase(): void {
-        var user_data = require('./data_user.json').users;
+        const user_data = require('./data_user.json').users;
         // for (let us of user_data) {
 
         // }
