@@ -17,7 +17,7 @@
       <div class="card mb-3" style="width: 100%;">     
         <div class="wrap">
           <div class="inner">
-            <h3 class="title title-medium">{{ this.users.getUserByIndex(0).name }} </h3>
+            <h4 class="title title-item">{{ this.users.getUserByIndex(0).name }} </h4>
             <div class="infos">
               <div class="infos-total">Utilisation moyenne par jour : {{ this.users.getUserByIndex(0).usePerDayElec }} kWh</div>
               <div class="infos-total">Utilisation totale du mois : {{ this.users.getUserByIndex(0).totalUsePerMonthElec }} kWh</div>
@@ -34,8 +34,8 @@
               <div class="active-challenges">
                 <h4 class="title title-item">Vos défis en cours</h4>
                 <div class="challenges-item">
-                  <h5 class="title title-small">Être le meilleur</h5>
-                  <p class="challenge-resume content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h5 class="title title-small">Actif depuis 5 ans.</h5>
+                  <p class="challenge-resume content">Vous obtiendrez un nouveau trophée une fois que vous aurez été actif pendant 5 ans!</p>
                 </div>
               </div>
             </div>
@@ -48,11 +48,11 @@
           <div class="wrap">
             <div class="inner">
               <div class="completed-challenges">
-                <h4 class="title title-item">Vs derniers défis complétés</h4>
+                <h4 class="title title-item">Vos derniers défis complétés</h4>
                 <div class="challenges-item">
-                  <h5 class="title title-small">Série de réduction</h5>
-                  <p class="challenge-resume content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <p><a routerLink="/achievements">Voir tous les defis</a></p>
+                  <h5 class="title title-small">Actif depuis 2 ans.</h5>
+                  <p class="challenge-resume content">Vous avez été actif pendant 2 ans! Félicitation!</p>
+                  <p><a routerLink="/achievements">Voir tous les défis</a></p>
                 </div>
               </div>
             </div>
