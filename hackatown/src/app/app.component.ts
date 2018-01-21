@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Users } from './users';
 
 
 @Component({
@@ -8,11 +9,11 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  user_data: any;
+  private users: Users;
+
   constructor() { }
 
   ngOnInit() {
-    this.user_data = require('./data_user.json');
-    console.log(this.user_data);
+    this.users = new Users();
   }
 }
