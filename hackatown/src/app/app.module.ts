@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { UserComponent } from './user/user.component';
+import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
@@ -20,7 +21,7 @@ import { AppRoutingModule } from './/app-routing.module';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapComponent, UserComponent ],
+  declarations: [ AppComponent, MapComponent, UserComponent, AboutComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
