@@ -3,6 +3,8 @@ import { User } from './user';
 
 
 declare var require: any;
+declare var google: any;
+
 export class Users {
     private users: User[];
 
@@ -27,5 +29,14 @@ export class Users {
 
     getUsers(): User[] {
         return this.users;
+    }
+
+    getUser(latLng:any): User{
+        for(let i = 0 ; i < this.users.length ; i++) {
+            console.log(this.users[i].localisation.lat, latLng.lat(), this.users[i].localisation.lng, latLng.lng());
+            if(this.users[i].localisation.lat == latLng.lat() && this.users[i].localisation.lng == latLng.lng()) {
+                return this.users[i];
+            }
+        }
     }
 }

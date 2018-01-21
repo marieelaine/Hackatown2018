@@ -1,6 +1,18 @@
 {
     "users" : [
         {
+            "id":2,
+            "name":"Bernard",
+            "imageSrc":"https://www.webfuel.com/blog/hero-banner.jpg",
+            "usePerDay":21,
+            "totalUsePerMonth": 520,
+            "achievementsList": [1, 2, 3],
+            "localisation": {
+                "lat": 44.5016889,
+                "lng": -74.56725599999999
+            }
+        },
+        {
             "id":1,
             "name":"Simon Marcoux",
             "imageSrc":"https://www.webfuel.com/blog/hero-banner.jpg",
@@ -10,6 +22,29 @@
             "localisation": {
                 "lat": 45.5016889,
                 "lng": -73.56725599999999
+            }
+        },     {
+            "id":1,
+            "name":"Simon Marcoux",
+            "imageSrc":"https://www.webfuel.com/blog/hero-banner.jpg",
+            "usePerDay":24.5,
+            "totalUsePerMonth": 680,
+            "achievementsList": [1, 2, 3],
+            "localisation": {
+                "lat": 46.5016889,
+                "lng": -73.56725599999999
+            }
+        },
+        {
+            "id":3,
+            "name":"Marie",
+            "imageSrc":"https://www.webfuel.com/blog/hero-banner.jpg",
+            "usePerDay":19,
+            "totalUsePerMonth": 440,
+            "achievementsList": [1, 2, 3],
+            "localisation": {
+                "lat": 46.5016889,
+                "lng": -72.56725599999999
             }
         }
     ]
