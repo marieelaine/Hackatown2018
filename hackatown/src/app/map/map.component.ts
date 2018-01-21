@@ -34,8 +34,8 @@ export class MapComponent implements OnInit {
   initMap(): void {
     var infowindow = new google.maps.InfoWindow();
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: {lat: this.centerLatitude, lng: this.centerLongitude}
+      zoom: 8,
+      center: { lat: this.centerLatitude, lng: this.centerLongitude }
     });
 
     for(var i = 0; i < this.users.getUsers().length ; i++) {
