@@ -1,1 +1,3 @@
-# Hackatown2018
+# Hackatown 2018
+
+`ng serve`
